@@ -20,4 +20,8 @@ public class PizzeriaService {
     public List<Pizzeria> getAll(){
         return new ArrayList<>((List<Pizzeria>)pizzeriaRepository.findAll());
     }
+
+    public Pizzeria getById(long id){
+        return pizzeriaRepository.findById(id).orElseThrow();
+    }
 }
