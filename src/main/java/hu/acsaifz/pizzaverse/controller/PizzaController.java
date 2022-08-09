@@ -1,6 +1,5 @@
 package hu.acsaifz.pizzaverse.controller;
 
-import hu.acsaifz.pizzaverse.repository.PizzaRepository;
 import hu.acsaifz.pizzaverse.service.PizzaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
