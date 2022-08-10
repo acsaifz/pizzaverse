@@ -50,8 +50,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="pizzeria: ${pizzerias}">
-                    <td th:text="${pizzeria.getId()}"></td>
+                <tr th:each="pizzeria: ${pizzerias}" style="position: relative">
+                    <!--<td th:text="${pizzeria.getId()}"></td>-->
+                    <td><a th:href="@{/pizzerias/{id}/pizzas(id = ${pizzeria.getId()})}" th:text="${pizzeria.getId()}" class="stretched-link"></a></td>
                     <td th:text="${pizzeria.getName()}"></td>
                     <td th:text="${pizzeria.getAddress()}"></td>
                     <td th:text="${pizzeria.getOpenHour()}"></td>
